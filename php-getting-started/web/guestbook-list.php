@@ -2,7 +2,7 @@
 require('config/config.php');
 require('config/db.php');
 
-$query = 'SELECT * FROM person ORDER BY personid DESC';
+$query = 'SELECT * FROM PERSON ORDER BY logdt DESC';
 $result = mysqli_query($conn, $query);
 $persons = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
